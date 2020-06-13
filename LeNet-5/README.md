@@ -9,5 +9,4 @@ In this repo i will create LeNet-5 Architecture in Tensorflow in two differet wa
 
 # LeNet-5 Architecture
 
-![LeNet-5]
-(https://github.com/surajkarki66/Different-CNN-Architecture/blob/master/LeNet-5/images/LeNet5.png)
+![LeNet5](https://user-images.githubusercontent.com/50628520/84495286-9d42e680-acca-11ea-88d7-f7c190ca5e10.png)
