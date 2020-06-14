@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.utils import to_categorical
 
 def loading_data():
-    mnist = tf.keras.datasets.mnist
-    (x_train, y_train), (x_test, y_test) = mnist.load_data()
+    fashion_mnist = tf.keras.datasets.fashion_mnist
+    (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
     x_train, x_test = x_train / 255.0, x_test / 255.0
 
     # Data Plotting
@@ -24,7 +24,6 @@ def loading_data():
     # one hot encoding
     y_train = to_categorical(y_train)
     y_test = to_categorical(y_test)
-    print(x_train)
 
     train_ds = tf.data.Dataset.from_tensor_slices(
         (x_train, y_train)).shuffle(10000).batch(32)
@@ -34,4 +33,3 @@ def loading_data():
     return train_ds, test_ds, input_shape
     
  
-train_ds, _, _ = loading_data()
