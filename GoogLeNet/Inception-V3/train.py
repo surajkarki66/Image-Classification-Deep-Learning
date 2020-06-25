@@ -24,14 +24,8 @@ if __name__ == '__main__':
 
 
     # get the original_dataset
-    #train_dataset, valid_dataset, test_dataset, train_count, valid_count, test_count = generate_datasets()
-    X_Temp = open('dataset/X_Data','rb')
-    X_Data = pickle.load(X_Temp)
-
-    Y_Temp = open('dataset/Y_Data','rb')
-    Y_Data = pickle.load(Y_Temp)
-    train_dataset = tf.data.Dataset.from_tensor_slices((X_Data, Y_Data)).shuffle(10000).batch(32)
-
+    train_dataset, valid_dataset, test_dataset, train_count, valid_count, test_count = generate_datasets()
+   
     # create model
     model = get_model()
 
