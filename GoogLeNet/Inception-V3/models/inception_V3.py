@@ -19,7 +19,7 @@ class InceptionV3(tf.keras.Model):
         ])
 
         self.block_2 = tf.keras.Sequential([
-            InceptionModule_2(),
+            InceptionModule_2(), # dimention reduction
             InceptionModule_3(filter_num=128),
             InceptionModule_3(filter_num=160),
             InceptionModule_3(filter_num=160),

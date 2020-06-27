@@ -158,7 +158,7 @@ class InceptionModule_1(tf.keras.layers.Layer):
         return output
 
 
-class InceptionModule_2(tf.keras.layers.Layer):
+class InceptionModule_2(tf.keras.layers.Layer):  # Grid size reduction
     def __init__(self):
         super(InceptionModule_2, self).__init__()
         # branch 0
