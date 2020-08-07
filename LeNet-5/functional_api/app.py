@@ -13,7 +13,6 @@ if __name__ == "__main__":
     nn.loss_graph(history)
     nn.save('mnist.h5')
 
-    
 
-    
-   
+
+
