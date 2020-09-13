@@ -65,5 +65,7 @@ def AlexNet(input_shape = None, num_classes = None):
                                 activation=tf.keras.activations.softmax)(drop2)
 
         model = tf.keras.models.Model(inputs=input_data, outputs=out)
+        model.summary()
         
         return model
+print(AlexNet(input_shape=(28, 28, 1), num_classes=10))
